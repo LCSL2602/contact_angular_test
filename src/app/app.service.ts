@@ -12,4 +12,12 @@ export class AppService {
   public getContacts(): any {
     return this.httpClient.get(`${this.enviroments['BASE_URL']}contact`)
   }
+
+  public getContact(id:string|null):any{
+    return this.httpClient.get(`${this.enviroments['BASE_URL']}contact/${id}`)
+  }
+
+  public deleteContact(id:string|null):any{
+    return this.httpClient.delete(`${this.enviroments['BASE_URL']}contact/${id}`)
+  }
 }

@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { ItemContactComponent } from './components/item-contact/item-contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { ItemEmptySelectComponent } from './components/item-empty-select/item-empty-select.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemContactComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    ItemEmptySelectComponent
   ],
   imports: [
     BrowserModule,
