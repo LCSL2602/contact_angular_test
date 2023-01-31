@@ -1,0 +1,15 @@
+.name_letter{
+    font-size: 100%;
+}
+
+.contact-item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-item:hover{
+    color: black;
+    background-color: white !important;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<div class="card bg-dark p-3 contact-item">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="p-3 border rounded bg-dark d-flex justify-content-center">
+                <p *ngIf="image.length == 0" class="m-0 name_letter">
+                    {{name[0]}}
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-8 d-flex justify-content-center">
+            <h5 class="m-0">{{name}} {{lastname}}</h5>
+        </div>
+    </div>
+</div>
