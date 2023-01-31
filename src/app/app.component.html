@@ -2,10 +2,18 @@
     <div class="row">
         <div class="col-sm-3 p-0 bg-dark">
             <div class="h-1000">
-                <app-item-contact [name]="'Luis'" [lastname]="'Sulbaran'"></app-item-contact>
-                <app-item-contact [name]="'Francelys'" [lastname]="'Caraballo'"></app-item-contact>
-                <app-item-contact [name]="'Pola'" [lastname]="'Sulbaran'"></app-item-contact>
-                <app-item-contact [name]="'Jairo'" [lastname]="'Sulbaran'"></app-item-contact>
+                <app-item-contact *ngFor="let item of listContacts"
+                    [name]="item['name']"
+                    [lastname]="item['lastname']"
+                    [image]="item['image']"
+                    (click)="openDetails(item['_id'])"
+                    >
+                </app-item-contact>
+            </div>
+        </div>
+        <div class="col-sm-9 bg-secondary d-flex justify-content-center">
+            <div class="card w-85 h-85 mt-5">
+                 <router-outlet></router-outlet>
             </div>
         </div>
     </div>
